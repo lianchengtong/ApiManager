@@ -1,7 +1,7 @@
 <?php
+    ini_set('display_errors', 'on');
     include './MinPHP/run/init.php';
-    $act = $_GET['act'];
-    $act = empty($act) ? 'index' : $_GET['act'];
+    $act = empty($_GET['act']) ? 'index' : $_GET['act'];
     $menu = '';
     switch($act){
         //接口分类
